@@ -24,7 +24,7 @@ body {
 /*navigation start */
 header nav {
     background-color: var(--base-color);
-    width: 100vw; /* I want the navbar to take up 100% of the viewport width*/
+    width: 100%; /* I want the navbar to take up 100% of the viewport width*/
     height: fit-content;
 }
 header nav ul {
@@ -33,7 +33,8 @@ header nav ul {
     display: flex; /* makes the flex items automatically go into a row */
     justify-content: flex-end; /*pushes all the content to the right side of the screen */
     align-items: center; /*aligns items in the center of the screen */
-    padding: 1em 0; /*puttings padding between the list items and bottom of the box */
+    padding-top: 1vw;
+    padding-bottom: 1vw; /*puttings padding between the list items and bottom of the box */
 }
 header nav ul li a {
     font-weight: lighter;
@@ -83,17 +84,16 @@ li a::after { /*psuedo element that applies to links in navbar; creates bar unde
     justify-content: space-between; /*spaces the image and the h2 elements on opposite ends of the section */
     align-items:flex-end; /*pushed all elements to the bottom of the section */
     margin: 0px auto;
-    border: .25em solid var(--bg-color); /*background border */
+    border: solid var(--bg-color); /*background border */
   }
   .cover img {
       width: 20vw; /*specified viewport so the image shrinks in relation to the viewer */
-      height: 20vw;
-      display: flex;
       align-items: flex-start; /* sticks it left */
-      border-right: .25em solid var(--bg-color); /*creates border between portrait and background image */
+      border-right: solid var(--bg-color); /*creates border between portrait and background image */
   }
   .cover div {
-    padding: 3.5em 10em; /*aligns the h2 element towards the center of the image*/
+    margin-bottom: 3.5%; /*aligns the h2 element towards the center of the image*/
+    margin-right: 3.5%;
   }
   .cover h2 {
       display: flex;
@@ -102,4 +102,5 @@ li a::after { /*psuedo element that applies to links in navbar; creates bar unde
       padding: .5em; /*the area of the color box around the h2 element */
       background-color: var(--hl-color); /*color of the box */
       border-radius: .5em; /*makes rounded corners */
+      font-size: 1.55vw;
   }
