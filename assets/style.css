@@ -4,25 +4,28 @@
   --tertiary-color: #212121;
 } */
 :root {
-    --primary-color:   #81604b; /*background color */
-  --secondary-color: #551414; /*highlight color */
-  --tertiary-color: #585757; /*backing color */
+    --bg-color:   #CB9E75; /*background color */
+  --hl-color: #886468; /*highlight color */
+  --base-color: #787681; /*backing color */
+  --txt-color: #10050D;
+  --title-color: #D0966E;
 }
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body {
     margin: 0;
-    background-color: var(--primary-color); /* color background throughout page*/
+    background-color: var(--bg-color); /* color background throughout page*/
     font-family: Helvetica, Arial, sans-serif;
 }
 
-
+/*navigation start */
 header nav {
-    background-color: var(--tertiary-color);
+    background-color: var(--base-color);
     width: 100vw; /* I want the navbar to take up 100% of the viewport width*/
-    height:fit-content;
+    height: fit-content;
 }
 header nav ul {
     list-style: none; /* removes dots from unordered list element */
@@ -37,7 +40,7 @@ header nav ul li a {
     font-size: 1.55vw;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* adds shadow effect on text */
     text-decoration: none; /*removes the default underline from links */
-    color: var(--primary-color);
+    color: var(--bg-color);
     padding-right: 3em;  /*puttings padding between the different items in the list */
     position: relative;
     transition: all ease-in-out 250ms;
@@ -49,7 +52,7 @@ li a::after { /*psuedo element that applies to links in navbar; creates bar unde
     display: block;
     height: 0.4em; /*height of the bar */
     width: 0%; /*initial width of the bar */
-    background-color: var(--secondary-color);
+    background-color: var(--hl-color);
     bottom: -.85em; /*spacing between the list items and bar */
     transition: all ease-in-out 250ms; /*is an animation effect that slow the transition between this and the hover effect */
   }
@@ -59,7 +62,7 @@ li a::after { /*psuedo element that applies to links in navbar; creates bar unde
     margin-right: auto; /*pushes it to the left of the page */
     margin-left: 3em; /*gives it space between left side of the page */
     font-weight: bolder;
-    color: var(--primary-color);
+    color: var(--title-color);
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* adds shadow effect on text */
 }
 
@@ -68,5 +71,35 @@ li a::after { /*psuedo element that applies to links in navbar; creates bar unde
   }
 
   li a:hover {
-    color: var(--secondary-color); /* changes the color of the link after it has been hovered over */
+    color: var(--hl-color); /* changes the color of the link after it has been hovered over */
+  }
+  /*navigation end */
+  /*cover picture */
+  .cover {
+    background-image: url("images/zion-bg.jpeg"); /* background image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between; /*spaces the image and the h2 elements on opposite ends of the section */
+    align-items:flex-end; /*pushed all elements to the bottom of the section */
+    margin: 0px auto;
+    border: .25em solid var(--bg-color); /*background border */
+  }
+  .cover img {
+      width: 20vw; /*specified viewport so the image shrinks in relation to the viewer */
+      height: 20vw;
+      display: flex;
+      align-items: flex-start; /* sticks it left */
+      border-right: .25em solid var(--bg-color); /*creates border between portrait and background image */
+  }
+  .cover div {
+    padding: 3.5em 10em; /*aligns the h2 element towards the center of the image*/
+  }
+  .cover h2 {
+      display: flex;
+      color: var(--txt-color); /*darker text color*/
+      margin: auto; /* removed the automatic margins around image, making it easier to move around */
+      padding: .5em; /*the area of the color box around the h2 element */
+      background-color: var(--hl-color); /*color of the box */
+      border-radius: .5em; /*makes rounded corners */
   }
