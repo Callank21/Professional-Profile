@@ -75,7 +75,7 @@ li a::after { /*psuedo element that applies to links in navbar; creates bar unde
     color: var(--hl-color); /* changes the color of the link after it has been hovered over */
   }
   /*navigation end */
-  /*cover picture */
+  /*cover picture begin */
   .cover {
     background-image: url("images/zion-bg.jpeg"); /* background image */
     background-size: cover;
@@ -104,3 +104,31 @@ li a::after { /*psuedo element that applies to links in navbar; creates bar unde
       border-radius: .5em; /*makes rounded corners */
       font-size: 1.55vw;
   }
+  /* cover picture end */
+  /*about-me begin */
+  .grid {
+    display: flex;
+    justify-content: space-between; /*puts objects on opposite ends of the screen */
+    color: var(--txt-color);
+    margin:15%;
+    margin-top: 0%;
+    margin-bottom: 0%;;
+  }
+  .grid div {
+    margin: 5em;
+    margin-right: 0%;
+    width: 15em;
+  }
+  .grid div h1 {
+    text-align: right;
+    font-size: 3vw;
+  }
+  .grid div p {
+    margin-left: 2.5em;
+    font-size: 1.25vw;
+  }
+  .grid div:last-child{
+    border-left: solid var(--hl-color);
+    width:75vw;
+  }
+
