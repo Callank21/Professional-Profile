@@ -108,12 +108,12 @@ li a::after { /*psuedo element that applies to links in navbar; creates bar unde
   /*about-me begin */
   .grid {
     display: flex;
-    justify-content: space-between; /*puts objects on opposite ends of the screen */
+    justify-content: space-between;
     color: var(--txt-color);
     margin:15%;
     margin-top: 0%;
-    margin-bottom: 0%;;
-  }
+    margin-bottom: 0%; 
+  } 
   .grid div {
     margin: 5em;
     margin-right: 0%;
@@ -130,5 +130,54 @@ li a::after { /*psuedo element that applies to links in navbar; creates bar unde
   .grid div:last-child{
     border-left: solid var(--hl-color);
     width:75vw;
+  } 
+  /*about-me end */
+  #work {
+    display: flex;
+    justify-content: space-between; 
+    color: var(--txt-color);
+    margin:15%;
+    margin-top: 0%;
+    margin-bottom: 0%;
   }
-
+  #work div {
+    margin: 5em;
+    margin-right: 0%;
+    width: 15em;
+    flex-flow:column wrap;
+    justify-content: flex-start;
+  }
+  #work div h1 {
+    text-align: right;
+    font-size: 3vw;
+    
+  } 
+.run-buddy {
+  background-image: url("images/run-buddy-thumbnail.PNG");
+  background-size:cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+  border: solid var(--base-color);
+  border-radius: 1em; 
+} 
+.Horiseon {
+  background-image: url("images/Horiseon-Thumbnail.PNG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 10vh;
+  border: solid var(--base-color);
+  border-radius: 1em;
+  margin-left:1%; 
+}
+#work div:nth-child(2){
+  border-left: solid var(--hl-color);
+  width:100%;
+  height: 50em;
+  margin-top: 0%;
+  flex-basis: 75%;
+} 
+.links a div p {
+  text-decoration: none;
+  color: var(--title-color);
+  background-color: var(--hl-color);
+}
