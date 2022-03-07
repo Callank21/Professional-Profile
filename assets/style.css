@@ -181,3 +181,26 @@ li a::after { /*psuedo element that applies to links in navbar; creates bar unde
   color: var(--title-color);
   background-color: var(--hl-color);
 }
+.grid .contact {
+  width: 100%; /* I want the navbar to take up 100% of the viewport width*/
+  height: fit-content;
+}
+.grid .contact ul {
+  list-style: none; /* removes dots from unordered list element */
+  margin: 0; /*makes the bar flush to the top of the page */
+  display: flex; /* makes the flex items automatically go into a row */
+  justify-content: flex-end; /*pushes all the content to the right side of the screen */
+  align-items: center; /*aligns items in the center of the screen */
+  padding-top: 1vw;
+  padding-bottom: 1vw; /*puttings padding between the list items and bottom of the box */
+}
+.grid .contact ul li a {
+  font-weight: lighter;
+  font-size: 1.55vw;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* adds shadow effect on text */
+  text-decoration: none; /*removes the default underline from links */
+  color: var(--base-color);
+  padding-right: 3em;  /*puttings padding between the different items in the list */
+  position: relative;
+  transition: all ease-in-out 250ms;
+}
