@@ -17,9 +17,7 @@ Simple website deployment using any web browser.
 
 ## Screenshot
 
-    ```md
     ![Screenshot of my website](assets/images/profile-Thumbnail/)
-    ```
 
 ## Credits
 Callan Keesling 
