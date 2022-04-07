@@ -169,6 +169,15 @@ li a::after { /*psuedo element that applies to links in navbar; creates bar unde
   border-radius: 1em;
   margin-left:1%; 
 }
+.Air-quality {
+  background-image: url("images/Airquality.PNG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 10vh;
+  border: solid var(--base-color);
+  border-radius: 1em;
+  margin-left:1%; 
+}
 #work div:nth-child(2){
   border-left: solid var(--hl-color);
   width:100%;
